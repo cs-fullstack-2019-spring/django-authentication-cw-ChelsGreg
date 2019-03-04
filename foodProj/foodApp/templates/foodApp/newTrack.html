@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New User</title>
+</head>
+<body>
+<h3>Create New User</h3>
+
+<!--form to send to create user-->
+<form action="{% url 'loginhere' %}" method="post">
+    {% csrf_token %}
+    {{ newForm.as_p }}
+    <button>Submit</button>
+</form>
+
+</body>
+</html>
