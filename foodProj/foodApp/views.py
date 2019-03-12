@@ -27,6 +27,6 @@ def loginhere(request):
     # }
     # if request.method == "POST":
     #     print(request.POST)
-        User.objects.create_user(request.POST["username"], "", request.POST[""])
+    #     User.objects.create_user(request.POST["username"], "", request.POST[""])
 
     return render(request, 'foodApp'/'loginhere.html', context)
